@@ -16,7 +16,7 @@ type GrammarEntry = {
 // English ellipsis: …
 const Grammars: Array<GrammarEntry> = [
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: "It looks as if it's not too bad…",
@@ -30,7 +30,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: "It looks pretty good; however, it's a little old.",
@@ -44,7 +44,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en:
@@ -59,7 +59,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: 'He is a sophomore; he will invariably know a little more (than you).',
@@ -77,7 +77,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en:
@@ -92,7 +92,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: 'Okay, okay, then just do it yourself.',
@@ -106,7 +106,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: "… before long, you'll probably be missing them.",
@@ -120,7 +120,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en:
@@ -135,7 +135,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 1,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: 'As you say that, I feel even hungrier.',
@@ -153,7 +153,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 2,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en: "As far as I'm concerned, every dish tastes about the same.",
@@ -167,7 +167,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 2,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en:
@@ -182,7 +182,7 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 2,
   },
   {
-    book: 2,
+    book: 3,
     examples: [
       {
         en:
@@ -196,6 +196,56 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '就是嘛！',
     },
     lesson: 2,
+  },
+  {
+    book: 3,
+    examples: [
+      {
+        en: 'In order to explain this, we need to begin by talking about Sun Yat-sen.',
+        zh_TW: '這就要從孫中山先生說起來。',
+      },
+      {
+        en:
+          'From this time onward, because Taiwan and Mainland China as each have their own system, they had different development.',
+        zh_TW: '從這個時候起，台灣和中國大陸因為各有各的制度，就有了不同的發展。',
+      },
+    ],
+    grammar: {
+      en: 'to start from…',
+      zh_TW: '從⋯⋯起',
+    },
+    lesson: 11,
+    page: 327,
+  },
+  {
+    book: 3,
+    examples: [
+      {
+        en: 'In order to explain this, we need to begin by talking about Sun Yat-Sen.',
+        zh_TW: '這就要從孫中山先生說起來。',
+      },
+    ],
+    grammar: {
+      en: 'to explain this one must begin by talking about…',
+      zh_TW: '這就要從⋯⋯說起來',
+    },
+    lesson: 11,
+    page: 328,
+  },
+  {
+    book: 3,
+    examples: [
+      {
+        en: 'Due to the length of the war, society never had a chance to stabilize, …',
+        zh_TW: '就因為長時間打仗的關係，社會一直沒辦法安定，⋯⋯',
+      },
+    ],
+    grammar: {
+      en: 'Due to…',
+      zh_TW: '因為⋯⋯的關係',
+    },
+    lesson: 11,
+    page: 329,
   },
 ];
 

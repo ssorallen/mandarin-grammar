@@ -36,13 +36,9 @@ class App extends React.Component<void, State> {
           <div className="row justify-content-md-center">
             <div className="col-lg-6">
               <div className="mt-2">
-                <small>
-                  <a href="#">Book {currentGrammar.book}</a>
-                </small>{' '}
-                <small className="text-muted">&gt;</small>{' '}
-                <small>
-                  <a href="#">Lesson {currentGrammar.lesson}</a>
-                </small>
+                <small className="text-muted">Book {currentGrammar.book}</small>{' '}
+                <small className="text-muted">⦊</small>{' '}
+                <small className="text-muted">Lesson {currentGrammar.lesson}</small>
               </div>
             </div>
           </div>
