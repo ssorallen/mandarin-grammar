@@ -20,7 +20,7 @@ type GrammarEntry = {
   page: number,
 };
 
-export const Books = [
+export const Books: Array<Book> = [
   {
     id: 2,
     title: 'Practical Audio-Visual Chinese 3rd Edition',

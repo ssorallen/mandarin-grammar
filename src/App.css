@@ -6,3 +6,7 @@
     width: 100%;
   }
 }
+
+.card-text > li:last-child > div:last-child > p:last-child {
+  margin-bottom: 0;
+}
