@@ -1,7 +1,7 @@
 /* @flow */
 
 import './App.css';
-import Grammars from './Grammars';
+import { Books, Grammars } from './Grammars';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -30,13 +30,16 @@ class App extends React.Component<void, State> {
 
   render() {
     const { currentGrammar } = this.state;
+    const currentBook = Books.find(book => book.id === currentGrammar.bookId);
+    if (currentBook == null) return <div />;
+
     return (
       <React.Fragment>
         <main className="container" role="main">
           <div className="row justify-content-md-center">
             <div className="col-lg-6">
               <div className="mt-2">
-                <small className="text-muted">Book {currentGrammar.book}</small>{' '}
+                <small className="text-muted">Volume {currentBook.volume}</small>{' '}
                 <small className="text-muted">⦊</small>{' '}
                 <small className="text-muted">Lesson {currentGrammar.lesson}</small>
               </div>

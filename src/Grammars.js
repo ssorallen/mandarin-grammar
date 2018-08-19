@@ -1,22 +1,45 @@
 /* @flow */
 
+type Book = {
+  id: number,
+  title: string,
+  url: string,
+  volume: number,
+};
+
 type GrammarExample = {
   en: string,
   zh_TW: string,
 };
 
 type GrammarEntry = {
-  book: number,
+  bookId: number,
   examples: Array<GrammarExample>,
   grammar: GrammarExample,
   lesson: number,
+  page: number,
 };
+
+export const Books = [
+  {
+    id: 2,
+    title: 'Practical Audio-Visual Chinese 3rd Edition',
+    url: 'http://www.ccbc.com.tw/pro_detail.php?book_sn=2010',
+    volume: 2,
+  },
+  {
+    id: 3,
+    title: 'Practical Audio-Visual Chinese 3rd Edition',
+    url: 'http://www.ccbc.com.tw/pro_detail.php?book_sn=2011',
+    volume: 3,
+  },
+];
 
 // Chinese ellipsis: ⋯⋯
 // English ellipsis: …
-const Grammars: Array<GrammarEntry> = [
+export const Grammars: Array<GrammarEntry> = [
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: "It looks as if it's not too bad…",
@@ -28,9 +51,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '(topic)V起來⋯⋯',
     },
     lesson: 1,
+    page: 30,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: "It looks pretty good; however, it's a little old.",
@@ -42,9 +66,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '(topic)看起來⋯⋯，就是⋯⋯。',
     },
     lesson: 1,
+    page: 31,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en:
@@ -57,9 +82,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '⋯⋯沒關係，⋯⋯就好了。',
     },
     lesson: 1,
+    page: 32,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'He is a sophomore; he will invariably know a little more (than you).',
@@ -75,9 +101,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '總是',
     },
     lesson: 1,
+    page: 33,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en:
@@ -90,9 +117,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '還是⋯⋯把！',
     },
     lesson: 1,
+    page: 34,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'Okay, okay, then just do it yourself.',
@@ -104,9 +132,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '來',
     },
     lesson: 1,
+    page: 36,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: "… before long, you'll probably be missing them.",
@@ -118,9 +147,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '(S) V 不了幾 M(N)，(S) 就⋯⋯',
     },
     lesson: 1,
+    page: 37,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en:
@@ -133,9 +163,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: 'S 對⋯⋯有興趣',
     },
     lesson: 1,
+    page: 39,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'As you say that, I feel even hungrier.',
@@ -151,9 +182,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: 'V/SV 得 N/PN⋯⋯',
     },
     lesson: 2,
+    page: 60,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: "As far as I'm concerned, every dish tastes about the same.",
@@ -165,9 +197,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '對 NP 來說⋯⋯',
     },
     lesson: 2,
+    page: 63,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en:
@@ -180,9 +213,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: 'V 來 V 去',
     },
     lesson: 2,
+    page: 64,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en:
@@ -196,9 +230,10 @@ const Grammars: Array<GrammarEntry> = [
       zh_TW: '就是嘛！',
     },
     lesson: 2,
+    page: 65,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'In order to explain this, we need to begin by talking about Sun Yat-sen.',
@@ -218,7 +253,7 @@ const Grammars: Array<GrammarEntry> = [
     page: 327,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'In order to explain this, we need to begin by talking about Sun Yat-Sen.',
@@ -233,7 +268,7 @@ const Grammars: Array<GrammarEntry> = [
     page: 328,
   },
   {
-    book: 3,
+    bookId: 3,
     examples: [
       {
         en: 'Due to the length of the war, society never had a chance to stabilize, …',
@@ -247,6 +282,36 @@ const Grammars: Array<GrammarEntry> = [
     lesson: 11,
     page: 329,
   },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en:
+          'During this time, the power of the National Government was greatly weakened. Furthermore, the Communist Party became increasingly powerful; thus, they controlled most of Mainland China…',
+        zh_TW:
+          '國民政府的力量這時候已經弱了很多，再加上共產黨的勢力越來越大，控制了大陸大部分的地方⋯⋯',
+      },
+    ],
+    grammar: {
+      en: 'furthermore; additionally',
+      zh_TW: '再加上',
+    },
+    lesson: 11,
+    page: 330,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'Each has its own system.',
+        zh_TW: '各有各的制度。',
+      },
+    ],
+    grammar: {
+      en: 'each has its own…',
+      zh_TW: '各有各的 N',
+    },
+    lesson: 11,
+    page: 331,
+  },
 ];
-
-export default Grammars;
