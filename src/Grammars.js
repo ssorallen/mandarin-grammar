@@ -204,7 +204,7 @@ export const Grammars: Array<GrammarEntry> = [
     examples: [
       {
         en:
-          "After repeadtedly eating the school cafeteria's mass-produced food, one still just finds those same few dishes.",
+          "After repeatedly eating the school cafeteria's mass-produced food, one still just finds those same few dishes.",
         zh_TW: '學校餐廳的大鍋菜，吃來吃去就那幾樣。',
       },
     ],
@@ -231,6 +231,67 @@ export const Grammars: Array<GrammarEntry> = [
     },
     lesson: 2,
     page: 65,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: "In Taiwan, whatever you'd want to eat is readily available.",
+        zh_TW: '在台灣，要吃什麼就有什麼。',
+      },
+    ],
+    grammar: {
+      en: '',
+      zh_TW: '⋯⋯QW⋯⋯就⋯⋯QW⋯⋯',
+    },
+    lesson: 2,
+    page: 68,
+  },
+  // TODO: Subgrammar p.69
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'Even in the middle of the night you can find a place to eat.',
+        zh_TW: '連半夜都找得到地方吃。',
+      },
+    ],
+    grammar: {
+      en: 'even…',
+      zh_TW: '連⋯⋯都/也⋯⋯',
+    },
+    lesson: 2,
+    page: 70,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'Whatever you can think of to eat is available.',
+        zh_TW: '只要你想到出來，就吃得到。',
+      },
+    ],
+    grammar: {
+      en: 'As long as… (then)…',
+      zh_TW: '只要⋯⋯，就⋯⋯',
+    },
+    lesson: 2,
+    page: 73,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'Hey, look! What is it that they are eating?',
+        zh_TW: '欸，你看，她們吃的是什麼？',
+      },
+    ],
+    grammar: {
+      en: 'The use of interjection 欸',
+      zh_TW: '嘆詞「欸」的用法',
+    },
+    lesson: 2,
+    page: 74,
   },
   {
     bookId: 3,
