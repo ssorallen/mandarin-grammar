@@ -297,6 +297,68 @@ export const Grammars: Array<GrammarEntry> = [
     bookId: 3,
     examples: [
       {
+        en:
+          'I have a friend from France that believes only by coming to Taiwan or going to China can one be proficient in Chinese.',
+        zh_TW: '我有個法國朋友覺得他們那裡沒有說中文的環境，得來台灣或去中國大陸才能吧中文學好。',
+      },
+    ],
+    grammar: {
+      en: 'only if',
+      zh_TW: '才',
+    },
+    lesson: 3,
+    page: 95,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'I wonder if we have an exchange program with the European schools here.',
+        zh_TW: '不知道我們跟歐洲那邊的學校有沒有交換計畫？',
+      },
+      {
+        en: 'I wonder how the prices in Tainan are.',
+        zh_TW: '不知道台南的物價怎麼樣？',
+      },
+    ],
+    grammar: {
+      en: 'I wonder…',
+      zh_TW: '不知道⋯⋯',
+    },
+    lesson: 3,
+    page: 97,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
+        en: 'If it is possible, then he will come next year.',
+        zh_TW: '要是可能的話，明年就來。',
+      },
+      {
+        en: 'If you want to apply, you can download the application form yourself.',
+        zh_TW: '要申請的話，就自己下載申請表。',
+      },
+      {
+        en: 'If you need it, you are welcome to come over and get it anytime.',
+        zh_TW: '你需要的話，隨時歡迎你來拿。',
+      },
+      {
+        en: 'If the landlord is willing, then the rent can be made a little cheaper.',
+        zh_TW: '要是房東願意的話，房租可以少算一點。',
+      },
+    ],
+    grammar: {
+      en: 'if…',
+      zh_TW: '（要是）⋯⋯的話',
+    },
+    lesson: 3,
+    page: 99,
+  },
+  {
+    bookId: 3,
+    examples: [
+      {
         en: 'In order to explain this, we need to begin by talking about Sun Yat-sen.',
         zh_TW: '這就要從孫中山先生說起來。',
       },
