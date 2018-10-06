@@ -170,7 +170,7 @@ export const Grammars: Array<GrammarEntry> = [
     examples: [
       {
         en: 'As you say that, I feel even hungrier.',
-        zh_TW: '說的我更餓了。',
+        zh_TW: '說得我更餓了。',
       },
       {
         en: 'One will certainly become too fat to get on the plane.',
